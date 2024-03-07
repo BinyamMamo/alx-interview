@@ -1,6 +1,6 @@
 # 🚀 ALX Interview Preparation 🚀
 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--L-7WITfv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/1600/0%2AAMFCRjhsLkoqFmoz." width="75%">
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--L-7WITfv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/1600/0%2AAMFCRjhsLkoqFmoz." width="50%">
 
 👋 Hello and welcome to the 'alx-interview' repository! This isn't just any repository, it contains projects designed to guide ALX students like me towards acing technical interviews successfully. It's packed with resources and practice problems focusing on various technical interview aspects. So, let's dive in and start cracking those interviews! 💪
 
