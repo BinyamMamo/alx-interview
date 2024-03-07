@@ -9,9 +9,8 @@ def pascal_triangle(n):
     Returns the pascal triangle of size n
     """
     triangle = []
-
-    if (n < 2):
-        return [1] if n == 1 else []
+    if type(n) is not int or n <= 0:
+        return []
 
     for y in range(n + 1):
         row = []
