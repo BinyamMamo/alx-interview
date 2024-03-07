@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-'''
+"""
 Generates a Pascal's Triangle with `n` rows.
-'''
+"""
 
 
 def pascal_triangle(n):
-    '''
+    """
     Returns the pascal triangle of size n
-    '''
+    """
     triangle = []
     if type(n) is not int or n <= 0:
         return []
