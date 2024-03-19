@@ -9,7 +9,7 @@ result in exactly n H characters in the file.
 """
 
 
-def minOperations(n):
+def minOperations(n: int) -> int:
     """
     Calculates the fewest number of operations
     needed to get `n` 'H' characters.
