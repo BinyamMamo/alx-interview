@@ -23,10 +23,3 @@ def minOperations(n):
         if n % i == 0:
             return i + minOperations(n//i)
     return n
-
-# Example usage
-if __name__ == "__main__":
-    n1 = 4
-    n2 = 12
-    print(f"Min # of operations to reach {n1} char: {minOperations(n1)}")
-    print(f"Min # of operations to reach {n2} char: {minOperations(n2)}")
