@@ -15,7 +15,7 @@ def minOperations(n: int) -> int:
     needed to get `n` 'H' characters.
     """
 
-    if n <= 0:
+    if type(n) is not int or n <= 0:
         return 0
     elif n == 1:
         return 1
