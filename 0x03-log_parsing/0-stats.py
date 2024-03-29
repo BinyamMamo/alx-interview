@@ -42,12 +42,14 @@ if __name__ == "__main__":
                     STATUS_CODES[status_code] += 1
             except IndexError:
                 pass
+
             try:
                 TOTAL_SIZE += int(data[-1])
             except ValueError:
                 pass
             if LINE_COUNT % 10 == 0:
                 print_stats()
+        print_stats()
 
     except KeyboardInterrupt:
         print_stats()
