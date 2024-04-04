@@ -13,8 +13,7 @@ def zeros(text):
     """
     return ('0' * (8 - len(str(bin(text)[2:])))) + str(bin(text)[2:])
 
-
-def validUtf8(self, data: List[int]) -> bool:
+def validUTF8(data: List[int]) -> bool:
     """
     Validates if the given list of
     integers is a valid UTF-8 encoding.
