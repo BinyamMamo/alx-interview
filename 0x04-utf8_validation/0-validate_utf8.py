@@ -4,7 +4,7 @@
 checks whether a list of integers
 represents a valid UTF-8 encoding.
 """
-
+from typing import List
 
 def zeros(text):
     """
