@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 393. UTF-8 Validation - #Medium
 checks whether a list of integers
