@@ -6,12 +6,14 @@ represents a valid UTF-8 encoding.
 """
 from typing import List
 
+
 def zeros(text):
     """
     Converts an integer to its binary representation and
     pads it with leading zeros to make it 8 characters long.
     """
     return ('0' * (8 - len(str(bin(text)[2:])))) + str(bin(text)[2:])
+
 
 def validUTF8(data: List[int]) -> bool:
     """
