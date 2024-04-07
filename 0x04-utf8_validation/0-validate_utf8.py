@@ -7,40 +7,32 @@ represents a valid UTF-8 encoding.
 from typing import List
 
 
-def zeros(text):
-    """
-    Converts an integer to its binary representation and
-    pads it with leading zeros to make it 8 characters long.
-    """
-    return ('0' * (8 - len(str(bin(text)[2:])))) + str(bin(text)[2:])
-
-
 def validUTF8(data: List[int]) -> bool:
     """
     Validates if the given list of
     integers is a valid UTF-8 encoding.
     """
-    data = iter(data)
-    for dt in data:
-        dt = zeros(dt)
-        if dt[0] == '1':
-            count = 0
-            for c in dt:
-                if c != '1' or count > 4:
-                    break
-                count += 1
-            if count in range(2, 5):
-                for _ in range(1, count):
-                    try:
-                        nxtdt = zeros(next(data))
-                        if not nxtdt or nxtdt[0] != '1' or nxtdt[1] != '0':
-                            return False
-                    except Exception:
-                        return False
-            else:
+    num_bytes = 0
+
+    mask1 = 1 << 7
+    mask2 = 1 << 6
+
+    for num in data:
+        mask = 1 << 7
+        if num_bytes == 0:
+            while mask & num:
+                num_bytes += 1
+                mask = mask >> 1
+
+            if num_bytes == 0:
+                continue
+
+            if num_bytes == 1 or num_bytes > 4:
                 return False
-        elif dt[0] == '0':
-            pass
         else:
-            return False
-    return True
+            if not (num & mask1 and not (num & mask2)):
+                return False
+
+        num_bytes -= 1
+
+    return num_bytes == 0
