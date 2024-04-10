@@ -6,7 +6,7 @@ an NxN chessboard such that no two queens attack each other
 
 USAGE: ./0-nqueens.py N
 """
-from sys import argv
+import sys
 
 
 def solveNQueens(n):
@@ -28,6 +28,7 @@ def solveNQueens(n):
 
     res = []
     board = [[". "] * n for _ in range(n)]
+
     def backtrack(r):
         """
         Recursive backtracking function to test each placement.
