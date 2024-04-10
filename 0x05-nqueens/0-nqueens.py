@@ -62,18 +62,17 @@ def solveNQueens(n):
     return res
 
 
-if __name__ == "__main__":
-    if len(argv) < 2:
-        print("Usage: nqueens N")
-        exit(1)
-    if not argv[1].isnumeric():
-        print("N must be a number")
-        exit(1)
+if len(sys.argv) < 2:
+    print("Usage: nqueens N")
+    exit(1)
+if not sys.argv[1].isnumeric():
+    print("N must be a number")
+    exit(1)
 
-    n = int(argv[1])
-    if n < 4:
-        print("N must be at least 4")
-        exit(1)
+n = int(sys.argv[1])
+if n < 4:
+    print("N must be at least 4")
+    exit(1)
 
-    for solution in solveNQueens(n):
-        print(solution)
+for solution in solveNQueens(n):
+    print(solution)
