@@ -1,5 +1,5 @@
 # 👑 0x05. N Queens
-![](https://miro.medium.com/v2/resize:fit:640/format:webp/0*ScgscJU4q5zWf6lk.png)
+![](https://qph.cf2.quoracdn.net/main-qimg-342fed0e21163f2dc1d7b82b2a16b868)
 ## Project Overview 🪶
 The N Queens project aims to solve the N queens puzzle, which involves placing N non-attacking queens on an N×N chessboard. The project implements a Python script that solves the N queens problem using a backtracking algorithm.
 
