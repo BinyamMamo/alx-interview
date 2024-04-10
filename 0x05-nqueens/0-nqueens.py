@@ -7,10 +7,9 @@ an NxN chessboard such that no two queens attack each other
 USAGE: ./0-nqueens.py N
 """
 from sys import argv
-from typing import List
 
 
-def solveNQueens(n: int) -> List[List[int]]:
+def solveNQueens(n):
     """
     Uses a backtracking algorithm to test
     each possible placement of queens.
