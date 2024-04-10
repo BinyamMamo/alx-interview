@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Task 0. N queens -> # Interview Problem
 Mission: Solve the N Queens problem of placing N queens on
