@@ -1,5 +1,6 @@
 # directories
 __pycache__
+.vscode
 
 # files
 main.py
