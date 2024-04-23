@@ -4,10 +4,7 @@
 mandatory
 Given an n x n 2D matrix, rotate it 90 degrees clockwise.
 """
-from typing import List
-
-
-def rotate_2d_matrix(matrix: List[List[int]]) -> None:
+def rotate_2d_matrix(matrix) -> None:
     """
     Rotates a 2D matrix 90 degrees clockwise in place
     """
