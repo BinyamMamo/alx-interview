@@ -17,6 +17,9 @@ def island_perimeter(grid) -> int:
     Returns:
         int: The perimeter of the island.
     """
+    if type(grid) != list or not grid:
+        return 0
+
     perimeter = 0
 
     for r in range(len(grid)):
