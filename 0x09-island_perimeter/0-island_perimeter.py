@@ -2,12 +2,12 @@
 """
 0. Island Perimeter
 
-Create a function def island_perimeter(grid) that
-returns the perimeter of the island described in grid
+Create a function that returns the perimeter of an island, which
+is represented by '1's (land) and surrounded by '0's (water).
 """
 
 
-def island_perimeter(grid) -> int:
+def island_perimeter(grid):
     """
     calculates the perimeter of the island by iterating through the grid.
 
@@ -21,14 +21,18 @@ def island_perimeter(grid) -> int:
         return 0
 
     perimeter = 0
-
-    for r in range(len(grid)):
-        for c in range(len(grid[0])):
-            if grid[r][c]:
-                perimeter += 4
-                for j in (-1, 1):
-                    if ((r + j in range(len(grid)) and grid[r + j][c]) or
-                            (c + j in range(len(grid[0])) and grid[r][c + j])):
-                        perimeter -= 1
-
+    rows, cols = len(grid), len(grid[0])
+    for row in range(rows):
+        for col in range(cols):
+            if grid[row][col] == 1:
+                water_sides = 0
+                if row == 0 or grid[row - 1][col] == 0:
+                    water_sides += 1
+                if row == rows - 1 or grid[row + 1][col] == 0:
+                    water_sides += 1
+                if col == 0 or grid[row][col - 1] == 0:
+                    water_sides += 1
+                if col == cols - 1 or grid[row][col + 1] == 0:
+                    water_sides += 1
+                perimeter += water_sides
     return perimeter
