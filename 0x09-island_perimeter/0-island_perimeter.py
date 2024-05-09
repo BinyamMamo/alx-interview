@@ -7,7 +7,7 @@ returns the perimeter of the island described in grid
 """
 
 
-def islandPerimeter(self, grid) -> int:
+def island_perimeter(grid) -> int:
     """
     calculates the perimeter of the island by iterating through the grid.
 
