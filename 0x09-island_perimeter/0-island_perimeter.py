@@ -8,24 +8,24 @@ returns the perimeter of the island described in grid
 
 
 def islandPerimeter(self, grid) -> int:
-	"""
-	calculates the perimeter of the island by iterating through the grid.
+    """
+    calculates the perimeter of the island by iterating through the grid.
 
-	Args:
-		grid (List[List[int]]): A 2D list representing the grid of the island.
+    Args:
+        grid (List[List[int]]): A 2D list representing the grid of the island.
 
-	Returns:
-		int: The perimeter of the island.
-	"""
-	perimeter = 0
+    Returns:
+        int: The perimeter of the island.
+    """
+    perimeter = 0
 
-	for r in range(len(grid)):
-		for c in range(len(grid[0])):
-			if grid[r][c]:
-				perimeter += 4
-				for j in (-1, 1):
-					if ((r + j in range(len(grid)) and grid[r + j][c]) or
-							(c + j in range(len(grid[0])) and grid[r][c + j])):
-						perimeter -= 1
+    for r in range(len(grid)):
+        for c in range(len(grid[0])):
+            if grid[r][c]:
+                perimeter += 4
+                for j in (-1, 1):
+                    if ((r + j in range(len(grid)) and grid[r + j][c]) or
+                            (c + j in range(len(grid[0])) and grid[r][c + j])):
+                        perimeter -= 1
 
-	return perimeter
+    return perimeter
