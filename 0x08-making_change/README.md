@@ -1,12 +1,12 @@
-# Making Change Project ✨
+# 💰 0x08. Making Change
 
-> "Why did the Mr. Bucks go to school? Because it wanted to get changed!" 🤣
+> "Why did Mr. Bucks go to school? Because it wanted to get changed!"
 
 ## Project Overview 🪶
 
 The Making Change project aims to solve the problem of determining the fewest number of coins needed to meet a given amount. By implementing a dynamic programming approach, the project efficiently computes the minimum number of coins required for a given total using a provided set of coin denominations.
 
-## 🔧 Requirements and Dependencies:
+## 🔧 Requirements and Dependencies
 
 - Python 3.4.3
 - PEP 8 style compliance
@@ -39,8 +39,7 @@ makeChange([1256, 54, 48, 16, 102], 1453)
 -1
 ```
 
-**🗂️ Files:** 
-- **[0-making_change.py](0-making_change.py)**
+**🗂️ Files:**  **[0-making_change.py](0-making_change.py)**
 
 **🗒️ Description:** 
 
@@ -69,4 +68,5 @@ The file `0-making_change.py` implements a function `makeChange(coins, total)` t
 ██║  ██║███████╗██╔╝ ██╗    ███████║╚███╔███╔╝███████╗
 ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝    ╚══════╝ ╚══╝╚══╝ ╚══════╝
                                                       
+
 </pre>
