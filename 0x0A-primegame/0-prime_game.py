@@ -24,6 +24,10 @@ def sieve(n):
 
 
 def isWinner(x, nums):
+    """
+    Determine the winner of the prime game
+    played with numbers from 1 to x, given nums
+    """
     if not nums or x < 1:
         return None
 
